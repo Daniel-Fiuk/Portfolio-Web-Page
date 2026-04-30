@@ -119,8 +119,8 @@ a {
     }
   }
 
-  &.external .external-icon {
-    height: 1ex;
+  &.external .external-icon { 
+    height: 0ex; // remove external link icon
     margin: 0 0.15em;
 
     > path {

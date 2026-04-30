@@ -92,6 +92,8 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 	</ul>
 </div>
 
+## My Most Recent Updates
+
 # Here are some of my university projects!
 <div id="content">
 	<div class="widget" style="flex: 1; min-width: 18em;">
@@ -152,7 +154,7 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 		<a href="https://x.com/DanielFiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="X Button.svg"></a>
 	</div>
 	<div class="widget" style="flex: 1">
-		<a href="www.linkedin.com/in/danielfiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="LinkedIn Button.svg"></a>
+		<a href="https://www.linkedin.com/in/danielfiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="LinkedIn Button.svg"></a>
 	</div>
 	<div class="widget" style="flex: 1">
 		<a href="https://bsky.app/profile/danielfiuk.bsky.social" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Bluesky Button.svg"></a>

@@ -8,23 +8,23 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "Daniel Fiuk",
+    pageTitleSuffix: " | Daniel Fiuk - Gameplay Programming",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "danielfiuk.ca",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Inter",
+        body: "Inter",
         code: "IBM Plex Mono",
       },
       colors: {
@@ -40,15 +40,15 @@ const config: QuartzConfig = {
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#111717", // Background Color
+          lightgray: "#393639", // Search and Graph Boarders
+          gray: "#646464", // Unknown
+          darkgray: "#d4d4d4", // Text Color
+          dark: "#ebebec", // Header Text Color
+          secondary: "#5beeff", // Link Primary Color
+          tertiary: "#ffeb7d", // Link Selected Color
+          highlight: "rgba(143, 159, 169, 0.15)", // Unknown
+          textHighlight: "#b3aa0288", // Unknown
         },
       },
     },
