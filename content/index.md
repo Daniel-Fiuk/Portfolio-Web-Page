@@ -7,63 +7,120 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 ---
 
 <style>
+		#content {  
+		display: flex;  
+		flex-flow: row wrap;  
+		flex-direction: row;  
+		margin: 0% 2.5%;  
+	}  
+	  
+	.web-icon {  
+		flex-shrink: 1.15;  
+	}  
+	  
+	.web-title {  
+		white-space: nowrap;  
+		text-align: right;  
+		line-height: 0.5rem;  
+		margin-left: 0.5rem;  
+		margin-right: 0.5rem;  
+	}  
+	  
+	.widget {  
+		flex: 1 1 250px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}  
+
 	#content {
 		display: flex;
-		flex-flow: row wrap;
-		flex-direction: row;
-		margin: 0% 2.5%;
+		flex-wrap: wrap;
+		gap: 1rem;
 	}
-	
-	.widget {
-	  flex-wrap: wrap;
-	  margin: 0% 2.5%;
-	}
-	
-	.text {
-		white-space: wrap;
-		margin: 5% 2.5%;
-	}
-	
-	.balance {
-		 text-wrap: pretty;
-		 hyphens: none;
-	}
-	
-	.hero {
-		 margin: 0% 5%;
-	}
-	
-	.responsive-container {
-		 position: relative;
-		 width: 100%;
-		 padding-bottom: 56.25%;
-		 height: 0;
-	}
-	
-	.responsive-container iframe {
-		 position: absolute;
-		 top: 0;
-		 left: 0;
-		 width: 100%;
-		 height: 100%;
-	}
-	
-	.dark{
-		display: block;
-	}
-	
-	.light {
+
+	  
+	.text {  
+		white-space: wrap;  
+		margin: 5% 2.5%;  
+	}  
+	  
+	.balance {  
+		text-wrap: pretty;  
+		hyphens: none;  
+	}  
+	  
+	.hero {  
+		margin: 0% 5%;  
+	}  
+	  
+	.responsive-container {  
+		position: relative;  
+		width: 100%;  
+		padding-bottom: 56.25%;  
+		height: 0;  
+	}  
+	  
+	.responsive-container iframe {  
+		position: absolute;  
+		top: 0;  
+		left: 0;  
+		width: 100%;  
+		height: 100%;  
+	}  
+	  
+	img.theme-icon-light {
 		display: none;
 	}
 	
-	:root[saved-theme="light"] {
-		.dark{
-			display: none;
-		}
-		
-		.light {
-			display: block;
-		}
+	img.theme-icon-dark,
+	img.theme-icon-light {
+		 min-height: 10em;
+		 max-height: 10em;
+	}
+	
+	html[saved-theme="dark"] img.theme-icon-dark { display: block !important; }
+	html[saved-theme="dark"] img.theme-icon-light { display: none !important; }
+	html[saved-theme="light"] img.theme-icon-dark { display: none !important; }
+	html[saved-theme="light"] img.theme-icon-light { display: block !important; }
+	
+	.yearsDisplay {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.tool-status {
+		display: inline-block;
+		margin: 0.25rem 0 0.5rem 0;
+		padding: 0.25rem 0.65rem;
+		border-radius: 999px;
+		 font-size: 0.8rem;
+		 font-weight: 600;
+		 line-height: 1.2;
+	}
+	
+	.tool-status.learning {
+		 background: rgba(70, 130, 255, 0.15);
+		 color: #6ea8ff;
+		 border: 1px solid rgba(70, 130, 255, 0.35);
+	}
+	
+	.tool-status.active {
+		 background: rgba(60, 180, 120, 0.15);
+		 color: #7fdfaa;
+		 border: 1px solid rgba(60, 180, 120, 0.35);
+	}
+
+	.tool-status.paused {
+		 background: rgba(180, 180, 70, 0.15);
+		 color: #dddd9b;
+		 border: 1px solid rgba(180, 180, 70, 0.35);
+	}	
+	.tool-status.inactive {
+		 background: rgba(255, 120, 120, 0.15);
+		 color: #ff9b9b;
+		 border: 1px solid rgba(255, 120, 120, 0.35);
 	}
 
 	.project-thumb {
@@ -99,7 +156,8 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 	</div>
 </div>
 
-# Check out what I'm working on currently in my free time!
+# Check out what I'm working on!
+## Current Passion Project
 <div class="hero">
 	<a class="project-thumb" href="Revenant Skies - Argent Knights"><img align="center" src="Revenant Skies - Argent Knights Hero.png"></a>
 	<ul>  
@@ -109,32 +167,40 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 	</ul>
 </div>
 
-## My Most Recent Updates
+## Side Projects
 
-# Here are some of my university projects!
+<div class="hero">
+	<a class="project-thumb" href="Simple Map For Obsidian"><img align="center" src="Simple Map Hero.svg" width="1500px"></a>
+	<ul>  
+		<li>Interactive Maps for Obsidian.</li>
+		<li>Organize your notes into pins on a custom map.</li>
+	</ul>
+</div>
+
+## University Projects
 <div id="content">
-	<div class="widget" style="flex: 1; min-width: 18em;">
+	<div class="hero" style="flex: 1; min-width: 18em;">
 		<a class="project-thumb" href="Daybreak"><img align="center" src="Daybreak Hero.png"></a>
 		<ul>  
 			<li>Procedural level generation using layered noise functions.</li>
 			<li>Player controller and AI movement with adherence to 3D terrain.</li>
 		</ul>
 	</div>
-	<div class="widget" style="flex: 1; min-width: 18em;" >
+	<div class="hero" style="flex: 1; min-width: 18em;" >
 		<a class="project-thumb" href="Starlight"><img align="center" src="Starlight Hero.png"></a>
 		<ul>  
 			<li>Procedural level generation derived from wave function collapse.</li>
 			<li>Modular mechanics systems that allow for player expression.</li>
 		</ul>
 	</div>
-	<div class="widget" style="flex: 1; min-width: 18em;" >
+	<div class="hero" style="flex: 1; min-width: 18em;" >
 		<a class="project-thumb" href="Moonset"><img align="center" src="Moonset Hero.png"></a>
 		<ul>  
 			<li>Fast and fluid movement system.</li>
 			<li>Level design that emphasizes speed and maneuverability.</li>
 		</ul>
 	</div>
-	<div class="widget" style="flex: 1; min-width: 18em;" >
+	<div class="hero" style="flex: 1; min-width: 18em;" >
 		<a class="project-thumb" href="The 437"><img align="center" src="The 437 Hero.png"></a>
 		<ul>  
 			<li>Enemy logic state machines.</li>
@@ -144,13 +210,48 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 </div>
 
 # These are some of the tools I use!
-![[Tools#Game Engines]]
+## Game Engines
+<div id="content" align="center">
+	<div class="widget" style="flex: 1;">
+		<p  class="yearsDisplay">Unity</p>
+		<img class="theme-icon-dark" src="Unity Cube White.svg" alt="Unity Engine">
+		<img class="theme-icon-light" src="Unity Cube Black.svg" alt="Unity Engine">
+		<p class="tool-status active">Actively Practiced</p>
+		<p class="yearsDisplay"><span class="year-diff" data-start-year="2019"/></p>
+	</div>
+	<div class="widget" style="flex: 1;">
+		<p  class="yearsDisplay">Unreal Engine</p>
+		<img class="theme-icon-dark" src="Unreal Engine Icon White.svg" alt="Unreal Engine">
+		<img class="theme-icon-light" src="Unreal Engine Icon Black.svg" alt="Unreal Engine">
+		<p class="tool-status paused">Practice Paused</p>
+		<p class="yearsDisplay"><span class="year-diff" data-start-year="2023"/></p>
+	</div>
+</div>
+
+<script>  
+	const spans = document.querySelectorAll('.year-diff');  
+	const currentYear = new Date().getFullYear();  
+		  
+	spans.forEach(span => {  
+		const startYear = parseInt(span.dataset.startYear);  
+		if (!isNaN(startYear)) {  
+			const difference = currentYear - startYear;  
+			if (difference === 1) { 
+				span.textContent = difference + ' year of experience'; 
+			} 
+			else { 
+				span.textContent = difference + ' years of experience'; 
+			}
+		}  
+	});  
+</script>
+
 <h2 class="balance" style="text-align: center">
 	<a href="Tools">See more tools I regularly use!</a>
 </h2>
 
 # Here's how you can contact me!
-<div id="content" align="center">
+<div id="content" align="center" style="flex: 1; min-width: 5em;">
 	<div class="widget" style="flex: 1">
 		<a class="project-thumb" href="https://discordapp.com/users/634863506319212550" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Discord Button.svg"></a>
 	</div>
@@ -169,7 +270,7 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 </div>
 
 # Check me out over on my other platforms!
-<div id="content" align="center">
+<div id="content" align="center" style="flex: 1; min-width: 5em;">
 	<div class="widget" style="flex: 1">
 		<a class="project-thumb" href="https://github.com/Daniel-Fiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="GitHub Button.svg"></a>
 	</div>
