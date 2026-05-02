@@ -6,7 +6,6 @@ tags:
 socialImage: "ProjectAngelsHero.png"
 socialDescription: An arcade first-person shooter and combat flight simulation hybrid.
 ---
-
 <style>
 	#content {
 		display: flex;

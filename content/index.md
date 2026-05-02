@@ -65,12 +65,29 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 			display: block;
 		}
 	}
+
+	.project-thumb {
+		 display: inline-block;
+		 overflow: none;
+		 border-radius: 0.5rem;
+	}
+	
+	.project-thumb img {
+		 display: block;
+		 transition: transform 180ms ease, box-shadow 180ms ease;
+		 transform-origin: center;
+	}
+	
+	.project-thumb:hover img,
+	.project-thumb:focus-visible img {
+		 transform: scale(1.04);
+	}
 </style>
 
 # Hello, nice to meet you!
 <div id="content" style="flex-flow: row wrap">
 	<div class="widget" style="flex: 3; min-width: 15em">
-		<img src="HeadshotSquare.webp" alt="Professional Headshot. That's Me!">
+		<a class="project-thumb" href="About Me"><img src="HeadshotSquare.webp" alt="Professional Headshot. That's Me!"></a>
 	</div>
 	<div class="text" style="flex: 5;  min-width: 25em">
 		<p class="balance">
@@ -84,7 +101,7 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 
 # Check out what I'm working on currently in my free time!
 <div class="hero">
-	<a href="Revenant Skies - Argent Knights"><img align="center" src="Revenant Skies - Argent Knights Hero.png"></a>
+	<a class="project-thumb" href="Revenant Skies - Argent Knights"><img align="center" src="Revenant Skies - Argent Knights Hero.png"></a>
 	<ul>  
 		<li>A culmination of my experience working on games thus far.</li>
 		<li>Emphasizing game development best practices. Organization and documentation.</li>
@@ -97,28 +114,28 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 # Here are some of my university projects!
 <div id="content">
 	<div class="widget" style="flex: 1; min-width: 18em;">
-		<a href="Daybreak"><img align="center" src="Daybreak Hero.png"></a>
+		<a class="project-thumb" href="Daybreak"><img align="center" src="Daybreak Hero.png"></a>
 		<ul>  
 			<li>Procedural level generation using layered noise functions.</li>
 			<li>Player controller and AI movement with adherence to 3D terrain.</li>
 		</ul>
 	</div>
 	<div class="widget" style="flex: 1; min-width: 18em;" >
-		<a href="Starlight"><img align="center" src="Starlight Hero.png"></a>
+		<a class="project-thumb" href="Starlight"><img align="center" src="Starlight Hero.png"></a>
 		<ul>  
 			<li>Procedural level generation derived from wave function collapse.</li>
 			<li>Modular mechanics systems that allow for player expression.</li>
 		</ul>
 	</div>
 	<div class="widget" style="flex: 1; min-width: 18em;" >
-		<a href="Moonset"><img align="center" src="Moonset Hero.png"></a>
+		<a class="project-thumb" href="Moonset"><img align="center" src="Moonset Hero.png"></a>
 		<ul>  
 			<li>Fast and fluid movement system.</li>
 			<li>Level design that emphasizes speed and maneuverability.</li>
 		</ul>
 	</div>
 	<div class="widget" style="flex: 1; min-width: 18em;" >
-		<a href="The 437"><img align="center" src="The 437 Hero.png"></a>
+		<a class="project-thumb" href="The 437"><img align="center" src="The 437 Hero.png"></a>
 		<ul>  
 			<li>Enemy logic state machines.</li>
 			<li>2D navigation and layered environmental interaction.</li>
@@ -127,17 +144,7 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 </div>
 
 # These are some of the tools I use!
-<div id="content" align="center">
-	<div class="widget" style="flex: 1;">
-		<img style="min-width: 10em; max-width: 10em" class="dark" src="Unity Cube White.svg">
-		<img style="min-width: 10em; max-width: 10em" class="light" src="Unity Cube Black.svg">
-	</div>
-	<div class="widget" style="flex: 1;">
-		<img style="min-width: 10em; max-width: 10em" class="dark" src="Unreal Engine Icon White.svg">
-		<img style="min-width: 10em; max-width: 10em" class="light" src="Unreal Engine Icon Black.svg">
-	</div>
-</div>
-
+![[Tools#Game Engines]]
 <h2 class="balance" style="text-align: center">
 	<a href="Tools">See more tools I regularly use!</a>
 </h2>
@@ -145,37 +152,37 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 # Here's how you can contact me!
 <div id="content" align="center">
 	<div class="widget" style="flex: 1">
-		<a href="https://discordapp.com/users/634863506319212550" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Discord Button.svg"></a>
+		<a class="project-thumb" href="https://discordapp.com/users/634863506319212550" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Discord Button.svg"></a>
 	</div>
 	<div class="widget" style="flex: 1">
-		<a href="mailto:daniel.fiuk21@gmail.com" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Gmail Button.svg"></a>
+		<a class="project-thumb" href="mailto:danielfiuk@pm.me" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Proton Mail Button.svg"></a>
 	</div>
 	<div class="widget" style="flex: 1">
-		<a href="https://x.com/DanielFiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="X Button.svg"></a>
+		<a class="project-thumb" href="https://x.com/DanielFiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="X Button.svg"></a>
 	</div>
 	<div class="widget" style="flex: 1">
-		<a href="https://www.linkedin.com/in/danielfiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="LinkedIn Button.svg"></a>
+		<a class="project-thumb" href="https://www.linkedin.com/in/danielfiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="LinkedIn Button.svg"></a>
 	</div>
 	<div class="widget" style="flex: 1">
-		<a href="https://bsky.app/profile/danielfiuk.bsky.social" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Bluesky Button.svg"></a>
+		<a class="project-thumb" href="https://bsky.app/profile/danielfiuk.bsky.social" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Bluesky Button.svg"></a>
 	</div>
 </div>
 
 # Check me out over on my other platforms!
 <div id="content" align="center">
 	<div class="widget" style="flex: 1">
-		<a href="https://github.com/Daniel-Fiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="GitHub Button.svg"></a>
+		<a class="project-thumb" href="https://github.com/Daniel-Fiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="GitHub Button.svg"></a>
 	</div>
 	<div class="widget" style="flex: 1">
-		<a href="https://danielfiuk.itch.io/" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Itch Button.svg"></a>
+		<a class="project-thumb" href="https://danielfiuk.itch.io/" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Itch Button.svg"></a>
 	</div>
 	<div class="widget" style="flex: 1">
-		<a href="https://www.youtube.com/@DanielFiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="YouTube Button.svg"></a>
+		<a class="project-thumb" href="https://www.youtube.com/@DanielFiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="YouTube Button.svg"></a>
 	</div>
 	<div class="widget" style="flex: 1">
-		<a href="https://lospec.com/danielfiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Lospec Button.svg"></a>
+		<a class="project-thumb" href="https://lospec.com/danielfiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Lospec Button.svg"></a>
 	</div>
 	<div class="widget" style="flex: 1">
-		<a href="https://sketchfab.com/DanielFiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Sketchfab Button.svg"></a>
+		<a class="project-thumb" href="https://sketchfab.com/DanielFiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Sketchfab Button.svg"></a>
 	</div>
 </div>
