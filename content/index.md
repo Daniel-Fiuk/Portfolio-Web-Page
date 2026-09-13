@@ -7,137 +7,54 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 ---
 
 <style>
-		#content {  
-		display: flex;  
-		flex-flow: row wrap;  
-		flex-direction: row;  
-		margin: 0% 2.5%;  
-	}  
-	  
-	.web-icon {  
-		flex-shrink: 1.15;  
-	}  
-	  
-	.web-title {  
-		white-space: nowrap;  
-		text-align: right;  
-		line-height: 0.5rem;  
-		margin-left: 0.5rem;  
-		margin-right: 0.5rem;  
-	}  
-	  
-	.widget {  
+	.widget {
 		flex: 1 1 250px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-	}  
-
-	#content {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-	}
-
-	  
-	.text {  
-		white-space: wrap;  
-		margin: 5% 2.5%;  
-	}  
-	  
-	.balance {  
-		text-wrap: pretty;  
-		hyphens: none;  
-	}  
-	  
-	.hero {  
-		margin: 0% 5%;  
-	}  
-	  
-	.responsive-container {  
-		position: relative;  
-		width: 100%;  
-		padding-bottom: 56.25%;  
-		height: 0;  
-	}  
-	  
-	.responsive-container iframe {  
-		position: absolute;  
-		top: 0;  
-		left: 0;  
-		width: 100%;  
-		height: 100%;  
-	}  
-	  
-	img.theme-icon-light {
-		display: none;
-	}
-	
-	img.theme-icon-dark,
-	img.theme-icon-light {
-		 min-height: 10em;
-		 max-height: 10em;
-	}
-	
-	html[saved-theme="dark"] img.theme-icon-dark { display: block !important; }
-	html[saved-theme="dark"] img.theme-icon-light { display: none !important; }
-	html[saved-theme="light"] img.theme-icon-dark { display: none !important; }
-	html[saved-theme="light"] img.theme-icon-light { display: block !important; }
-	
-	.yearsDisplay {
-		font-size: 1.2rem;
-		font-weight: bold;
-	}
-
-	.tool-status {
-		display: inline-block;
-		margin: 0.25rem 0 0.5rem 0;
-		padding: 0.25rem 0.65rem;
-		border-radius: 999px;
-		 font-size: 0.8rem;
-		 font-weight: 600;
-		 line-height: 1.2;
-	}
-	
-	.tool-status.learning {
-		 background: rgba(70, 130, 255, 0.15);
-		 color: #6ea8ff;
-		 border: 1px solid rgba(70, 130, 255, 0.35);
-	}
-	
-	.tool-status.active {
-		 background: rgba(60, 180, 120, 0.15);
-		 color: #7fdfaa;
-		 border: 1px solid rgba(60, 180, 120, 0.35);
-	}
-
-	.tool-status.paused {
-		 background: rgba(180, 180, 70, 0.15);
-		 color: #dddd9b;
-		 border: 1px solid rgba(180, 180, 70, 0.35);
-	}	
-	.tool-status.inactive {
-		 background: rgba(255, 120, 120, 0.15);
-		 color: #ff9b9b;
-		 border: 1px solid rgba(255, 120, 120, 0.35);
 	}
 
 	.project-thumb {
-		 display: inline-block;
-		 overflow: none;
-		 border-radius: 0.5rem;
+		display: inline-block;
+		overflow: none;
+		border-radius: 0.5rem;
 	}
-	
+
 	.project-thumb img {
-		 display: block;
-		 transition: transform 180ms ease, box-shadow 180ms ease;
-		 transform-origin: center;
+		display: block;
+		transition: transform 180ms ease, box-shadow 180ms ease;
+		transform-origin: center;
 	}
-	
+
 	.project-thumb:hover img,
 	.project-thumb:focus-visible img {
-		 transform: scale(1.04);
+		transform: scale(1.04);
+	}
+
+	.project-hidden {
+		display: none;
+	}
+
+	.expand-row {
+		text-align: center;
+		margin-top: 1.5rem;
+	}
+
+	.expand-btn {
+		background: var(--secondary);
+		color: var(--light);
+		border: none;
+		border-radius: 999px;
+		padding: 0.5rem 1.5rem;
+		font-size: 0.95rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: opacity 150ms ease;
+	}
+
+	.expand-btn:hover {
+		opacity: 0.85;
 	}
 </style>
 
@@ -178,7 +95,7 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 </div>
 
 ## University Projects
-<div id="content">
+<div id="content" class="project-grid">
 	<div class="hero" style="flex: 1; min-width: 18em;">
 		<a class="project-thumb" href="Daybreak"><img align="center" src="Daybreak Hero.png"></a>
 		<ul>  
@@ -207,7 +124,42 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 			<li>2D navigation and layered environmental interaction.</li>
 		</ul>
 	</div>
+	<div class="hero" style="flex: 1; min-width: 18em;" >
+		<a class="project-thumb" href="The 437"><img align="center" src="The 437 Hero.png"></a>
+		<ul>  
+			<li>Enemy logic state machines.</li>
+			<li>2D navigation and layered environmental interaction.</li>
+		</ul>
+	</div>
 </div>
+
+<div class="expand-row" style="display: none;">
+	<button id="project-expand-btn" class="expand-btn" type="button">View all projects</button>
+</div>
+
+<script>
+	(function () {
+		const grid = document.querySelector('#content.project-grid');
+		if (!grid) return;
+		const items = Array.from(grid.children).filter(el => el.classList.contains('hero'));
+		const visibleCount = 4;
+		const hiddenItems = items.slice(visibleCount);
+		if (hiddenItems.length === 0) return;
+
+		hiddenItems.forEach(item => item.classList.add('project-hidden'));
+
+		const expandRow = document.querySelector('.expand-row');
+		const btn = document.getElementById('project-expand-btn');
+		expandRow.style.display = 'block';
+
+		let expanded = false;
+		btn.addEventListener('click', () => {
+			expanded = !expanded;
+			hiddenItems.forEach(item => item.classList.toggle('project-hidden', !expanded));
+			btn.textContent = expanded ? 'Show fewer projects' : 'View all projects';
+		});
+	})();
+</script>
 
 # These are some of the tools I use!
 ## Game Engines
@@ -251,39 +203,39 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 </h2>
 
 # Here's how you can contact me!
-<div id="content" align="center" style="flex: 1; min-width: 5em;">
-	<div class="widget" style="flex: 1">
-		<a class="project-thumb" href="https://discordapp.com/users/634863506319212550" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Discord Button.svg"></a>
+<div id="content" class="button-row" align="center">
+	<div class="widget">
+		<a class="project-thumb" href="https://discordapp.com/users/634863506319212550" target="_blank"><img src="Discord Button.svg"></a>
 	</div>
-	<div class="widget" style="flex: 1">
-		<a class="project-thumb" href="mailto:danielfiuk@pm.me" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Proton Mail Button.svg"></a>
+	<div class="widget">
+		<a class="project-thumb" href="mailto:danielfiuk@pm.me" target="_blank"><img src="Proton Mail Button.svg"></a>
 	</div>
-	<div class="widget" style="flex: 1">
-		<a class="project-thumb" href="https://x.com/DanielFiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="X Button.svg"></a>
+	<div class="widget">
+		<a class="project-thumb" href="https://x.com/DanielFiuk" target="_blank"><img src="X Button.svg"></a>
 	</div>
-	<div class="widget" style="flex: 1">
-		<a class="project-thumb" href="https://www.linkedin.com/in/danielfiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="LinkedIn Button.svg"></a>
+	<div class="widget">
+		<a class="project-thumb" href="https://www.linkedin.com/in/danielfiuk" target="_blank"><img src="LinkedIn Button.svg"></a>
 	</div>
-	<div class="widget" style="flex: 1">
-		<a class="project-thumb" href="https://bsky.app/profile/danielfiuk.bsky.social" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Bluesky Button.svg"></a>
+	<div class="widget">
+		<a class="project-thumb" href="https://bsky.app/profile/danielfiuk.bsky.social" target="_blank"><img src="Bluesky Button.svg"></a>
 	</div>
 </div>
 
 # Check me out over on my other platforms!
-<div id="content" align="center" style="flex: 1; min-width: 5em;">
-	<div class="widget" style="flex: 1">
-		<a class="project-thumb" href="https://github.com/Daniel-Fiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="GitHub Button.svg"></a>
+<div id="content" class="button-row" align="center">
+	<div class="widget">
+		<a class="project-thumb" href="https://github.com/Daniel-Fiuk" target="_blank"><img src="GitHub Button.svg"></a>
 	</div>
-	<div class="widget" style="flex: 1">
-		<a class="project-thumb" href="https://danielfiuk.itch.io/" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Itch Button.svg"></a>
+	<div class="widget">
+		<a class="project-thumb" href="https://danielfiuk.itch.io/" target="_blank"><img src="Itch Button.svg"></a>
 	</div>
-	<div class="widget" style="flex: 1">
-		<a class="project-thumb" href="https://www.youtube.com/@DanielFiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="YouTube Button.svg"></a>
+	<div class="widget">
+		<a class="project-thumb" href="https://www.youtube.com/@DanielFiuk" target="_blank"><img src="YouTube Button.svg"></a>
 	</div>
-	<div class="widget" style="flex: 1">
-		<a class="project-thumb" href="https://lospec.com/danielfiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Lospec Button.svg"></a>
+	<div class="widget">
+		<a class="project-thumb" href="https://lospec.com/danielfiuk" target="_blank"><img src="Lospec Button.svg"></a>
 	</div>
-	<div class="widget" style="flex: 1">
-		<a class="project-thumb" href="https://sketchfab.com/DanielFiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Sketchfab Button.svg"></a>
+	<div class="widget">
+		<a class="project-thumb" href="https://sketchfab.com/DanielFiuk" target="_blank"><img src="Sketchfab Button.svg"></a>
 	</div>
 </div>

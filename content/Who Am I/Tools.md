@@ -1,118 +1,10 @@
 <style>
-	#content {  
-		display: flex;  
-		flex-flow: row wrap;  
-		flex-direction: row;  
-		margin: 0% 2.5%;  
-	}  
-	  
-	.web-icon {  
-		flex-shrink: 1.15;  
-	}  
-	  
-	.web-title {  
-		white-space: nowrap;  
-		text-align: right;  
-		line-height: 0.5rem;  
-		margin-left: 0.5rem;  
-		margin-right: 0.5rem;  
-	}  
-	  
-	.widget {  
+	.widget {
 		flex: 1 1 250px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-	}  
-
-	#content {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-	}
-
-	  
-	.text {  
-		white-space: wrap;  
-		margin: 5% 2.5%;  
-	}  
-	  
-	.balance {  
-		text-wrap: pretty;  
-		hyphens: none;  
-	}  
-	  
-	.hero {  
-		margin: 0% 5%;  
-	}  
-	  
-	.responsive-container {  
-		position: relative;  
-		width: 100%;  
-		padding-bottom: 56.25%;  
-		height: 0;  
-	}  
-	  
-	.responsive-container iframe {  
-		position: absolute;  
-		top: 0;  
-		left: 0;  
-		width: 100%;  
-		height: 100%;  
-	}  
-	  
-	img.theme-icon-light {
-		display: none;
-	}
-	
-	img.theme-icon-dark,
-	img.theme-icon-light {
-		 min-height: 10em;
-		 max-height: 10em;
-	}
-	
-	html[saved-theme="dark"] img.theme-icon-dark { display: block !important; }
-	html[saved-theme="dark"] img.theme-icon-light { display: none !important; }
-	html[saved-theme="light"] img.theme-icon-dark { display: none !important; }
-	html[saved-theme="light"] img.theme-icon-light { display: block !important; }
-	
-	.yearsDisplay {
-		font-size: 1.2rem;
-		font-weight: bold;
-	}
-
-	.tool-status {
-		display: inline-block;
-		margin: 0.25rem 0 0.5rem 0;
-		padding: 0.25rem 0.65rem;
-		border-radius: 999px;
-		 font-size: 0.8rem;
-		 font-weight: 600;
-		 line-height: 1.2;
-	}
-	
-	.tool-status.learning {
-		 background: rgba(70, 130, 255, 0.15);
-		 color: #6ea8ff;
-		 border: 1px solid rgba(70, 130, 255, 0.35);
-	}
-	
-	.tool-status.active {
-		 background: rgba(60, 180, 120, 0.15);
-		 color: #7fdfaa;
-		 border: 1px solid rgba(60, 180, 120, 0.35);
-	}
-
-	.tool-status.paused {
-		 background: rgba(180, 180, 70, 0.15);
-		 color: #dddd9b;
-		 border: 1px solid rgba(180, 180, 70, 0.35);
-	}	
-	.tool-status.inactive {
-		 background: rgba(255, 120, 120, 0.15);
-		 color: #ff9b9b;
-		 border: 1px solid rgba(255, 120, 120, 0.35);
 	}
 </style>
 
@@ -196,8 +88,8 @@
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2019"/></p>
 	</div>
 	<div class="widget" style="flex: 1;">
-		<p  class="yearsDisplay">Plastic SCM</p>
-		<img style="min-width: 10em; max-width: 10em" src="Plastic SCM Logo.svg" alt="Plastic SCM">
+		<p  class="yearsDisplay">Unity Version Control</p>
+		<img style="min-width: 10em; max-width: 10em" src="Unity Version Control Logo.svg" alt="Unity Version Control (formerly Plastic SCM)">
 		<p class="tool-status active">Actively Practiced</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2024"/></p>
 	</div>

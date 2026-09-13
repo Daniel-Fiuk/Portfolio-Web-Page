@@ -6,27 +6,14 @@ tags:
 ---
 
 <style>
-	#content {  
-		display: flex;  
-		flex-flow: row wrap;  
-		flex-direction: row;  
-		margin: 0% 2.5%;  
-	}  
-	  
-	.widget {  
-		 flex-wrap: wrap;  
-		 margin: 0% 2.5%;  
-	}  
-	  
-	.text {  
-		 white-space: wrap;  
-		 margin: 0% 2.5%;  
-	}  
-	  
-	.balance {  
-		 text-wrap: pretty;  
-		 hyphens: none;  
-	}  
+	.widget {
+		flex-wrap: wrap;
+		margin: 0% 2.5%;
+	}
+
+	.text {
+		margin: 0% 2.5%;
+	}
 </style>
 
 # Ontario Tech University

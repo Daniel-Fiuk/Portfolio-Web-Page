@@ -9,60 +9,10 @@ socialDescription: A third-person platformer and speed running game emphasizing 
 ---
 
 <style>
-	#content {
-		display: flex;
-		flex-flow: row wrap;
-		flex-direction: row;
-		margin: 0% 2.5%;
-	}
-	
 	.widget {
-	  flex-wrap: wrap;
-	  margin: 2.5% 2.5%;
+		flex-wrap: wrap;
+		margin: 2.5% 2.5%;
 	}
-	
-	.text {
-		white-space: wrap;
-		margin: 5% 2.5%;
-	}
-	
-	.balance {
-		 text-wrap: pretty;
-		 hyphens: none;
-	}
-	
-	.responsive-container {
-		 position: relative;
-		 width: 100%;
-		 padding-bottom: 56.25%;
-		 height: 0;
-	}
-	
-	.responsive-container iframe {
-		 position: absolute;
-		 top: 0;
-		 left: 0;
-		 width: 100%;
-		 height: 100%;
-	}
-	
-	.dark{  
-		 display: block;  
-	}  
-	  
-	.light {  
-		 display: none;  
-	}  
-	  
-	:root[saved-theme="light"] {  
-		  .dark{  
-		    display: none;  
-		  }  
-		  
-		  .light {  
-		    display: block;  
-		  }  
-	 }
 </style>
 
 <div align="center"> 

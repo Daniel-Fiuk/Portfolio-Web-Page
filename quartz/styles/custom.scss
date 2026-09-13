@@ -1,3 +1,151 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// ==========================================================================
+// Theme-aware logo swapping (Unity / Unreal / GitHub, etc.)
+// Pages provide two <img> tags with the same content: one tagged
+// "theme-icon-dark" (white/light artwork, shown on the dark theme) and one
+// tagged "theme-icon-light" (black/dark artwork, shown on the light theme).
+// This lives here (not in a per-page <style> block) because Quartz's
+// markdown-to-HTML pipeline HTML-escapes the quotes inside attribute
+// selectors written in inline <style> tags, silently breaking rules like
+// html[saved-theme="light"] { ... }. Compiled Sass is not affected.
+// ==========================================================================
+img.theme-icon-light {
+	display: none;
+}
+
+img.theme-icon-dark,
+img.theme-icon-light {
+	min-height: 10em;
+	max-height: 10em;
+}
+
+html[saved-theme="dark"] img.theme-icon-dark { display: block !important; }
+html[saved-theme="dark"] img.theme-icon-light { display: none !important; }
+html[saved-theme="light"] img.theme-icon-dark { display: none !important; }
+html[saved-theme="light"] img.theme-icon-light { display: block !important; }
+
+// ==========================================================================
+// Tool status tags (Tools page + homepage "tools I use" widgets)
+// ==========================================================================
+.tool-status {
+	display: inline-block;
+	margin: 0.25rem 0 0.5rem 0;
+	padding: 0.25rem 0.65rem;
+	border-radius: 999px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+// Dark theme palette
+html[saved-theme="dark"] .tool-status.learning { background: rgba(70, 130, 255, 0.15); color: #6ea8ff; border: 1px solid rgba(70, 130, 255, 0.35); }
+html[saved-theme="dark"] .tool-status.active   { background: rgba(60, 180, 120, 0.15); color: #7fdfaa; border: 1px solid rgba(60, 180, 120, 0.35); }
+html[saved-theme="dark"] .tool-status.paused   { background: rgba(180, 180, 70, 0.15); color: #dddd9b; border: 1px solid rgba(180, 180, 70, 0.35); }
+html[saved-theme="dark"] .tool-status.inactive { background: rgba(255, 120, 120, 0.15); color: #ff9b9b; border: 1px solid rgba(255, 120, 120, 0.35); }
+
+// Light theme palette — darker, more saturated text/border so the pills stay
+// legible on a near-white background instead of washing out.
+html[saved-theme="light"] .tool-status.learning { background: rgba(29, 78, 216, 0.12); color: #1d4ed8; border: 1px solid rgba(29, 78, 216, 0.45); }
+html[saved-theme="light"] .tool-status.active   { background: rgba(21, 128, 61, 0.12); color: #15803d; border: 1px solid rgba(21, 128, 61, 0.45); }
+html[saved-theme="light"] .tool-status.paused   { background: rgba(180, 120, 10, 0.14); color: #92650a; border: 1px solid rgba(180, 120, 10, 0.45); }
+html[saved-theme="light"] .tool-status.inactive { background: rgba(185, 28, 28, 0.12); color: #b91c1c; border: 1px solid rgba(185, 28, 28, 0.45); }
+
+// ==========================================================================
+// Single-row icon button links (contact / other-platforms widgets)
+// Add class="button-row" to the #content wrapper around a row of icon
+// buttons. Items shrink together to always fit on one line instead of
+// wrapping into an uneven last row.
+// ==========================================================================
+.button-row {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	gap: clamp(0.4rem, 2vw, 1rem);
+	width: 100%;
+}
+
+.button-row .widget {
+	flex: 1 1 0;
+	min-width: 0;
+	max-width: 7.5em;
+}
+
+.button-row .widget img {
+	display: block;
+	width: 100%;
+	height: auto;
+	min-width: 0;
+	max-width: 7.5em;
+}
+// ==========================================================================
+// Shared page layout (previously duplicated inline on every page: index.md,
+// Tools.md, Education.md, and every individual project page)
+// ==========================================================================
+#content {
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: row;
+	margin: 0% 2.5%;
+	gap: 1rem;
+}
+
+.text {
+	white-space: wrap;
+	margin: 5% 2.5%;
+}
+
+.balance {
+	text-wrap: pretty;
+	hyphens: none;
+}
+
+.hero {
+	margin: 0% 5%;
+}
+
+.responsive-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+
+.responsive-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.yearsDisplay {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+// Note: .widget is intentionally left out of this consolidation — it's
+// reused with three different, incompatible meanings across the site
+// (centered icon-grid tiles on the homepage/Tools page vs. wrapping
+// gallery/embed containers on project pages vs. Education's tighter
+// margins). Each page keeps its own local .widget rule; it still wins on
+// the cascade since page <style> blocks render after this stylesheet.
+
+// ==========================================================================
+// Dark/light-only visibility swap (project page "Made With Unity/Unreal"
+// logos + itch.io embed color variants). Lives here for the same escaping
+// reason as the icon-swap rules above — Quartz's markdown pipeline mangles
+// quotes inside inline <style> attribute selectors.
+// ==========================================================================
+.dark { display: block; }
+.light { display: none; }
+
+html[saved-theme="light"] {
+	.dark { display: none; }
+	.light { display: block; }
+}
+
+
