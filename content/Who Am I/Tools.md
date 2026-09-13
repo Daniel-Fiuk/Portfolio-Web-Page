@@ -198,7 +198,7 @@
 	<div class="widget" style="flex: 1;">
 		<p  class="yearsDisplay">Plastic SCM</p>
 		<img style="min-width: 10em; max-width: 10em" src="Plastic SCM Logo.svg" alt="Plastic SCM">
-		<p class="tool-status inactive">No Longer In Use</p>
+		<p class="tool-status inactive">Actively Practiced</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2024"/></p>
 	</div>
 </div>
