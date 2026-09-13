@@ -84,18 +84,15 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 	</ul>
 </div>
 
-## Side Projects
-
-<div class="hero">
-	<a class="project-thumb" href="Simple Map For Obsidian"><img align="center" src="Simple Map Hero.svg" width="1500px"></a>
-	<ul>  
-		<li>Interactive Maps for Obsidian.</li>
-		<li>Organize your notes into pins on a custom map.</li>
-	</ul>
-</div>
-
-## University Projects
+## All My Projects
 <div id="content" class="project-grid">
+	<div class="hero" style="flex: 1; min-width: 18em;">
+	<a class="project-thumb" href="Simple Map For Obsidian"><img align="center" src="Simple Map Hero.svg" width="1500px"></a>
+		<ul>  
+			<li>Interactive Maps for Obsidian.</li>
+			<li>Organize your notes into pins on a custom map.</li>
+		</ul>
+	</div>
 	<div class="hero" style="flex: 1; min-width: 18em;">
 		<a class="project-thumb" href="Daybreak"><img align="center" src="Daybreak Hero.png"></a>
 		<ul>  
@@ -115,13 +112,6 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 		<ul>  
 			<li>Fast and fluid movement system.</li>
 			<li>Level design that emphasizes speed and maneuverability.</li>
-		</ul>
-	</div>
-	<div class="hero" style="flex: 1; min-width: 18em;" >
-		<a class="project-thumb" href="The 437"><img align="center" src="The 437 Hero.png"></a>
-		<ul>  
-			<li>Enemy logic state machines.</li>
-			<li>2D navigation and layered environmental interaction.</li>
 		</ul>
 	</div>
 	<div class="hero" style="flex: 1; min-width: 18em;" >
