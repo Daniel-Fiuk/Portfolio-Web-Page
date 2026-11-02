@@ -23,7 +23,7 @@
 		<p  class="yearsDisplay">Unreal Engine</p>
 		<img class="theme-icon-dark" src="Unreal Engine Icon White.svg" alt="Unreal Engine">
 		<img class="theme-icon-light" src="Unreal Engine Icon Black.svg" alt="Unreal Engine">
-		<p class="tool-status paused">Practice Paused</p>
+		<p class="tool-status paused">Past Experience</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2023"/></p>
 	</div>
 </div>
@@ -39,7 +39,7 @@
 	<div class="widget" style="flex: 1;">
 		<p  class="yearsDisplay">C++</p>
 		<img style="min-height: 10em; max-height: 10em" src="C++ Logo.svg" alt="C++">
-		<p class="tool-status paused">Practice Paused</p>
+		<p class="tool-status paused">Past Experience</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2023"/></p>
 	</div>
 	<div class="widget" style="flex: 1;">
@@ -67,13 +67,13 @@
 	<div class="widget" style="flex: 1;">
 		<p  class="yearsDisplay">Visual Studio Community</p>
 		<img style="min-height: 10em; max-height: 10em" src="Visual Studio Logo.svg" alt="Visual Studio">
-		<p class="tool-status inactive">No Longer In Use</p>
+		<p class="tool-status paused">Past Experience</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2019"/></p>
 	</div>
 	<div class="widget" style="flex: 1;">
 		<p  class="yearsDisplay">Visual Studio Code</p>
 		<img style="min-height: 10em; max-height: 10em" src="Visual Studio Code Logo.svg" alt="Visual Studio Code">
-		<p class="tool-status inactive">No Longer In Use</p>
+		<p class="tool-status paused">Past Experience</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2024"/></p>
 	</div>
 </div>
@@ -112,13 +112,13 @@
 	<div class="widget" style="flex: 1;">
 		<p  class="yearsDisplay">Krita</p>
 		<img style="min-height: 10em; max-height: 10em" src="Krita Logo.svg" alt="Krita">
-		<p class="tool-status paused">Practice Paused</p>
+		<p class="tool-status paused">Past Experience</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2022"/></p>
 	</div>
 	<div class="widget" style="flex: 1;">
 		<p  class="yearsDisplay">Medibang</p>
 		<img style="min-height: 10em; max-height: 10em" src="MediBang Paint Logo.svg" alt="MediBang">
-		<p class="tool-status paused">Practice Paused</p>
+		<p class="tool-status paused">Past Experience</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2026"/></p>
 	</div>
 </div>
@@ -128,13 +128,13 @@
 	<div class="widget" style="flex: 1;">
 		<p  class="yearsDisplay">Blender</p>
 		<img style="min-height: 10em; max-height: 10em" src="Blender Logo.svg" alt="Blender">
-		<p class="tool-status paused">Practice Paused</p>
+		<p class="tool-status active">Actively Practiced</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2023"/></p>
 	</div>
 	<div class="widget" style="flex: 1;">
 		<p  class="yearsDisplay">Crocotile 3D</p>
 		<img style="min-height: 10em; max-height: 10em" src="Crocotile 3D Logo.png" alt="Crocotile 3D">
-		<p class="tool-status paused">Practice Paused</p>
+		<p class="tool-status paused">Past Experience</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2023"/></p>
 	</div>
 	<div class="widget" style="flex: 1;">
@@ -189,7 +189,7 @@
 	<div class="widget" style="flex: 1;">
 		<p  class="yearsDisplay">Notion</p>
 		<img style="min-height: 10em; max-height: 10em" src="Notion.svg" alt="Notion">
-		<p class="tool-status inactive">No Longer In Use</p>
+		<p class="tool-status paused">Past Experience</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2024"/></p>
 	</div>
 </div>
