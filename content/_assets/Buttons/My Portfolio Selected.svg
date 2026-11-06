@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 128 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,0,-64)">
+        <g id="Bluesky">
+        </g>
+        <g id="Bluesky-Selected" affinity:id="Bluesky Selected">
+        </g>
+        <g id="X">
+        </g>
+        <g id="X1" affinity:id="X">
+        </g>
+        <g id="Discord">
+        </g>
+        <g id="Discord-Selected" affinity:id="Discord Selected">
+        </g>
+        <g id="GitHub">
+        </g>
+        <g id="GitHub-Selected" affinity:id="GitHub Selected">
+        </g>
+        <g id="Email" transform="matrix(1,0,0,1,128,128)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(17,23,23);"/>
+            <g id="Icon">
+            </g>
+        </g>
+        <g id="Email-Selected" affinity:id="Email Selected">
+        </g>
+        <g id="Itch" transform="matrix(1,0,0,1,0,128)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(17,23,23);"/>
+        </g>
+        <g id="Itch-Selected" affinity:id="Itch Selected">
+        </g>
+        <g id="LinkedIn">
+        </g>
+        <g id="LinkedIn-Selected" affinity:id="LinkedIn Selected">
+        </g>
+        <g id="Lospec">
+        </g>
+        <g id="Lospec-Selected" affinity:id="Lospec Selected">
+        </g>
+        <g id="Sketchfab">
+        </g>
+        <g id="Sketchfab-Selected" affinity:id="Sketchfab Selected">
+        </g>
+        <g id="YouTube" transform="matrix(1,0,0,1,128,0)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(17,23,23);"/>
+        </g>
+        <g id="YouTube-Selected" affinity:id="YouTube Selected" transform="matrix(1,0,0,1,128,64)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:white;"/>
+        </g>
+        <g id="My-Portfolio" affinity:id="My Portfolio" transform="matrix(0.172493,0,0,0.172493,42.386234,12.029479)">
+            <g transform="matrix(5.797338,0,0,5.797338,-245.727319,-69.738951)">
+                <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(17,23,23);"/>
+            </g>
+            <g id="Icon1" affinity:id="Icon">
+            </g>
+        </g>
+        <g id="My-Portfolio-Selected" affinity:id="My Portfolio Selected" transform="matrix(0.172493,0,0,0.172493,42.386234,76.029479)">
+            <g transform="matrix(5.797338,0,0,5.797338,-245.727319,-69.738951)">
+                <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:white;"/>
+            </g>
+            <g id="Icon2" affinity:id="Icon" transform="matrix(1.105082,0,0,1.105082,-13.212066,-26.866489)">
+                <g transform="matrix(1.171526,0.313909,-0.313909,1.171526,44.511965,-22.81197)">
+                    <path d="M100.642,31.607C130.439,31.657 141.861,31.825 141.42,35.1L144.284,36C146.224,32.99 149.083,31.904 152.541,32.07C156.078,30.299 173.372,33.693 175.068,36.132C205.602,54.599 209.394,166.488 186.284,167C180.954,166.313 176.203,166.516 172.284,168C165.156,160.668 158.866,144.533 154.284,125C149.408,117.388 137.488,120.729 100.642,120.607C63.796,120.729 51.876,117.388 47,125C42.418,144.533 36.128,160.668 29,168C25.082,166.516 20.33,166.313 15,167C-8.11,166.488 -4.317,54.599 26.217,36.132C27.912,33.693 45.206,30.299 48.743,32.07C52.201,31.904 55.061,32.99 57,36L59.864,35.1C59.424,31.825 70.846,31.657 100.642,31.607Z" style="fill:rgb(17,23,23);"/>
+                </g>
+                <g transform="matrix(1.171526,0.313909,-0.313909,1.171526,44.511965,-22.81197)">
+                    <path d="M39.434,91.27L196.828,78.828C205.1,117.393 201.601,166.66 186.284,167C180.954,166.313 176.203,166.516 172.284,168C165.156,160.668 158.866,144.533 154.284,125C149.408,117.388 137.488,120.729 100.642,120.607C86.783,120.653 76.451,120.209 68.693,120.042L39.434,91.27Z" style="fill:url(#_Linear1);"/>
+                </g>
+                <g transform="matrix(1.171526,0.313909,-0.313909,1.171526,44.511965,-22.81197)">
+                    <path d="M24.794,49.041L176.462,37.052C205.712,58.025 209.037,166.496 186.284,167C180.954,166.313 176.203,166.516 172.284,168C165.156,160.668 158.866,144.533 154.284,125C149.408,117.388 137.488,120.729 100.642,120.607C99.599,120.611 98.576,120.612 97.572,120.61L24.794,49.041Z" style="fill:url(#_Linear2);"/>
+                </g>
+                <g transform="matrix(0.475265,0.127347,-0.127347,0.475265,61.841889,66.888646)">
+                    <path d="M73.16,97C66.074,96.497 64.476,96.988 90,92L86,88L58,80L58,78C37.549,72.037 23.793,65.344 16,58L39,61C69.043,55.52 68.747,66.014 76,67L76,66L101,73L136,75C163.411,57.408 159.609,56.609 165.233,62.233C169.162,66.162 166.539,64.432 152,79L150,86L166,86C166.984,89.738 167.35,89.239 162.738,90.894C161.111,91.478 158,93 158,93L155,93L153,94L154,95L153,97C150.007,97.361 147.35,97.006 145,96L144,96L144,97L145,98L144,99C140.823,99.449 138.212,99.031 136,98L129,100L118,99L117,96L110,95C77.341,97.409 79.585,97.456 73.16,97Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(1.177896,0.315616,-0.315616,1.177896,57.623204,-30.943784)">
+                    <path d="M73.16,97C66.074,96.497 64.476,96.988 90,92L86,88L58,80L58,78C37.549,72.037 23.793,65.344 16,58L39,61C69.043,55.52 68.747,66.014 76,67L76,66L101,73L136,75C163.411,57.408 159.609,56.609 165.233,62.233C169.162,66.162 166.539,64.432 152,79L150,86L166,86C166.984,89.738 167.35,89.239 162.738,90.894C161.111,91.478 158,93 158,93L155,93L153,94L154,95L153,97C150.007,97.361 147.35,97.006 145,96L144,96L144,97L145,98L144,99C140.823,99.449 138.212,99.031 136,98L129,100L118,99L117,96L110,95C77.341,97.409 79.585,97.456 73.16,97Z" style="fill:white;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(137.225856,40.738926,-40.738926,137.225856,39.434406,91.269595)"><stop offset="0" style="stop-color:white;stop-opacity:1"/><stop offset="1" style="stop-color:black;stop-opacity:0"/></linearGradient>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(250.692895,74.424453,-74.424453,250.692895,24.793589,49.041227)"><stop offset="0" style="stop-color:white;stop-opacity:1"/><stop offset="1" style="stop-color:black;stop-opacity:0"/></linearGradient>
+    </defs>
+</svg>

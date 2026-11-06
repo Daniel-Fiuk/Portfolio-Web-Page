@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 128 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-512,0)">
+        <g id="Bluesky">
+        </g>
+        <g id="Bluesky-Selected" affinity:id="Bluesky Selected">
+        </g>
+        <g id="X">
+        </g>
+        <g id="X1" affinity:id="X">
+        </g>
+        <g id="Discord">
+        </g>
+        <g id="Discord-Selected" affinity:id="Discord Selected">
+        </g>
+        <g id="GitHub">
+        </g>
+        <g id="GitHub-Selected" affinity:id="GitHub Selected">
+        </g>
+        <g id="Email">
+        </g>
+        <g id="Email-Selected" affinity:id="Email Selected">
+        </g>
+        <g id="Itch">
+        </g>
+        <g id="Itch-Selected" affinity:id="Itch Selected">
+        </g>
+        <g id="LinkedIn" transform="matrix(1,0,0,1,512,0)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(17,23,23);"/>
+            <clipPath id="_clip1">
+                <path d="M48.519,51.904C46.076,51.904 44.096,49.924 44.096,47.481L44.096,16.519C44.096,14.076 46.076,12.096 48.519,12.096L79.481,12.096C81.924,12.096 83.904,14.076 83.904,16.519L83.904,47.481C83.904,49.924 81.924,51.904 79.481,51.904L48.519,51.904ZM50.196,46.375L56.132,46.375L56.132,27.208L50.196,27.208L50.196,46.375ZM53.135,24.699C55.075,24.699 56.645,23.115 56.645,21.162C56.645,19.209 55.075,17.625 53.135,17.625C51.196,17.625 49.625,19.209 49.625,21.162C49.625,23.115 51.196,24.699 53.135,24.699ZM78.375,46.375L78.375,34.24C78.375,29.105 75.464,26.623 71.399,26.623C67.332,26.623 65.62,29.79 65.62,29.79L65.62,27.208L59.927,27.208L59.927,46.375L65.62,46.375L65.62,36.314C65.62,33.618 66.861,32.014 69.236,32.014C71.42,32.014 72.468,33.555 72.468,36.314L72.468,46.375L78.375,46.375Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <use xlink:href="#_Image2" x="44.096" y="12.096" width="40px" height="40px"/>
+            </g>
+        </g>
+        <g id="LinkedIn-Selected" affinity:id="LinkedIn Selected" transform="matrix(1,0,0,1,512,64)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:white;"/>
+        </g>
+        <g id="Lospec" transform="matrix(1,0,0,1,384,0)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(17,23,23);"/>
+        </g>
+        <g id="Lospec-Selected" affinity:id="Lospec Selected" transform="matrix(1,0,0,1,384,64)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(51,47,53);"/>
+        </g>
+        <g id="Sketchfab">
+        </g>
+        <g id="Sketchfab-Selected" affinity:id="Sketchfab Selected">
+        </g>
+        <g id="YouTube">
+        </g>
+        <g id="YouTube-Selected" affinity:id="YouTube Selected">
+        </g>
+        <g id="My-Portfolio" affinity:id="My Portfolio">
+        </g>
+        <g id="My-Portfolio-Selected" affinity:id="My Portfolio Selected">
+        </g>
+    </g>
+    <defs>
+        <image id="_Image2" width="40px" height="40px" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAoACgDAREAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABAUDAQb/xAAvEAACAAUDAgQFBAMAAAAAAAABAgADESExBBJhQVEicYGhBRORscEGFEPR4fDx/8QAGgEAAwEBAQEAAAAAAAAAAAAABAUGBwMCCP/EACMRAAEFAAEEAgMAAAAAAAAAAAEAAgMEEQUSQWFxITETseH/2gAMAwEAAhEDEQA/APf6qQxVjc26rGmsevnlzVEmrN1OoMiTcgkEdjkV4x/tIMdMyFnU4rkyF8zuloS9N8KfYrIBNUkUFc36jv7ZhJZ5Vrj8FPK3GFo+QqQ0aiUHMlWNK2Ndt/KnSFMl7U1jpYkSZJ27ydxNioGOQT6eoECutaiG1lakaJJjUZaw4ntfiaXKbgrmVwaFYX9P/D5+lZ5enkS5hTawRQK89q8xlHIc5dhsuL3ktJ7nc9ePHb0ta43hqk1VoawBwHYff9/ftDnfB1UupQqgJ27ft2rz7x3h5kyDdXibiAw/SL+1+UZirL3MxAAp555xnFYNbf3ug3Uc7LiSULEIwXBBx1xjqae+Y7C3q5Grip6aWAYe8hOSCpfj4ACCrGh2qyGgBHi3EAEU84z7k4+slaHxknQAFvNlpMkzdqKWrUhQaG5/v3iaD3QO8Km6WzN8qbN0apcug3G9x4qi1AL1BrnvDSC5qXTVcRzpAZgBVyAaLvFbjj/IhlHZ1L318XZNh1oYr7b9URUZibLql9oIIpQ47en/AGJi23VUVHYnyNpIKqxYm5F858+n1MTliJUlaVaTPlTZbS5pUBcX61pnrC8ExlMSA8KfMkMT/JmqnaVrfjt5V/B0U6DlhQZKhiDbipHrGi2Has2rtxKlLuYeA2yvfP3hHYGp5XOJMhgJgc7QGoBfjt+OYSzsTuB62RvHUUCncS1M8c2+sKpY02ikWm1ZibmluzMLUuKZx6g4MCAlhRRxwX//2Q=="/>
+    </defs>
+</svg>

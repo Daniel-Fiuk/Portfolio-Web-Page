@@ -127,29 +127,6 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 	<button id="project-expand-btn" class="expand-btn" type="button">View all projects</button>
 </div>
 
-<script>
-	(function () {
-		const grid = document.querySelector('#content.project-grid');
-		if (!grid) return;
-		const items = Array.from(grid.children).filter(el => el.classList.contains('hero'));
-		const visibleCount = 4;
-		const hiddenItems = items.slice(visibleCount);
-		if (hiddenItems.length === 0) return;
-
-		hiddenItems.forEach(item => item.classList.add('project-hidden'));
-
-		const expandRow = document.querySelector('.expand-row');
-		const btn = document.getElementById('project-expand-btn');
-		expandRow.style.display = 'block';
-
-		let expanded = false;
-		btn.addEventListener('click', () => {
-			expanded = !expanded;
-			hiddenItems.forEach(item => item.classList.toggle('project-hidden', !expanded));
-			btn.textContent = expanded ? 'Show fewer projects' : 'View all projects';
-		});
-	})();
-</script>
 
 # These are some of the tools I use!
 ## Game Engines
@@ -165,28 +142,11 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 		<p  class="yearsDisplay">Unreal Engine</p>
 		<img class="theme-icon-dark" src="Unreal Engine Icon White.svg" alt="Unreal Engine">
 		<img class="theme-icon-light" src="Unreal Engine Icon Black.svg" alt="Unreal Engine">
-		<p class="tool-status paused">Practice Paused</p>
+		<p class="tool-status paused">Past Experience</p>
 		<p class="yearsDisplay"><span class="year-diff" data-start-year="2023"/></p>
 	</div>
 </div>
 
-<script>  
-	const spans = document.querySelectorAll('.year-diff');  
-	const currentYear = new Date().getFullYear();  
-		  
-	spans.forEach(span => {  
-		const startYear = parseInt(span.dataset.startYear);  
-		if (!isNaN(startYear)) {  
-			const difference = currentYear - startYear;  
-			if (difference === 1) { 
-				span.textContent = difference + ' year of experience'; 
-			} 
-			else { 
-				span.textContent = difference + ' years of experience'; 
-			}
-		}  
-	});  
-</script>
 
 <h2 class="balance" style="text-align: center">
 	<a href="Tools">See more tools I regularly use!</a>
@@ -195,37 +155,37 @@ socialDescription: Hey! I'm a Gameplay Programmer and university graduate from O
 # Here's how you can contact me!
 <div id="content" class="button-row" align="center">
 	<div class="widget">
-		<a class="project-thumb" href="https://discordapp.com/users/634863506319212550" target="_blank"><img src="Discord Button.svg"></a>
+		<a class="project-thumb swap-button" href="https://discordapp.com/users/634863506319212550" target="_blank"><img class="btn-default" src="Discord.svg" alt="Discord"><img class="btn-selected" src="Discord Selected.svg" alt="" aria-hidden="true"></a>
 	</div>
 	<div class="widget">
-		<a class="project-thumb" href="mailto:danielfiuk@pm.me" target="_blank"><img src="Proton Mail Button.svg"></a>
+		<a class="project-thumb swap-button" href="mailto:contact@danielfiuk.ca" target="_blank"><img class="btn-default" src="Email.svg" alt="Email"><img class="btn-selected" src="Email Selected.svg" alt="" aria-hidden="true"></a>
 	</div>
 	<div class="widget">
-		<a class="project-thumb" href="https://x.com/DanielFiuk" target="_blank"><img src="X Button.svg"></a>
+		<a class="project-thumb swap-button" href="https://x.com/DanielFiuk" target="_blank"><img class="btn-default" src="X.svg" alt="X"><img class="btn-selected" src="X Selected.svg" alt="" aria-hidden="true"></a>
 	</div>
 	<div class="widget">
-		<a class="project-thumb" href="https://www.linkedin.com/in/danielfiuk" target="_blank"><img src="LinkedIn Button.svg"></a>
+		<a class="project-thumb swap-button" href="https://www.linkedin.com/in/danielfiuk" target="_blank"><img class="btn-default" src="LinkedIn.svg" alt="LinkedIn"><img class="btn-selected" src="LinkedIn Selected.svg" alt="" aria-hidden="true"></a>
 	</div>
 	<div class="widget">
-		<a class="project-thumb" href="https://bsky.app/profile/danielfiuk.bsky.social" target="_blank"><img src="Bluesky Button.svg"></a>
+		<a class="project-thumb swap-button" href="https://bsky.app/profile/danielfiuk.bsky.social" target="_blank"><img class="btn-default" src="Bluesky.svg" alt="Bluesky"><img class="btn-selected" src="Bluesky Selected.svg" alt="" aria-hidden="true"></a>
 	</div>
 </div>
 
 # Check me out over on my other platforms!
 <div id="content" class="button-row" align="center">
 	<div class="widget">
-		<a class="project-thumb" href="https://github.com/Daniel-Fiuk" target="_blank"><img src="GitHub Button.svg"></a>
+		<a class="project-thumb swap-button" href="https://github.com/Daniel-Fiuk" target="_blank"><img class="btn-default" src="GitHub.svg" alt="GitHub"><img class="btn-selected" src="GitHub Selected.svg" alt="" aria-hidden="true"></a>
 	</div>
 	<div class="widget">
-		<a class="project-thumb" href="https://danielfiuk.itch.io/" target="_blank"><img src="Itch Button.svg"></a>
+		<a class="project-thumb swap-button" href="https://danielfiuk.itch.io/" target="_blank"><img class="btn-default" src="Itch.svg" alt="itch.io"><img class="btn-selected" src="Itch Selected.svg" alt="" aria-hidden="true"></a>
 	</div>
 	<div class="widget">
-		<a class="project-thumb" href="https://www.youtube.com/@DanielFiuk" target="_blank"><img src="YouTube Button.svg"></a>
+		<a class="project-thumb swap-button" href="https://www.youtube.com/@DanielFiuk" target="_blank"><img class="btn-default" src="Youtube.svg" alt="YouTube"><img class="btn-selected" src="Youtube Selected.svg" alt="" aria-hidden="true"></a>
 	</div>
 	<div class="widget">
-		<a class="project-thumb" href="https://lospec.com/danielfiuk" target="_blank"><img src="Lospec Button.svg"></a>
+		<a class="project-thumb swap-button" href="https://lospec.com/danielfiuk" target="_blank"><img class="btn-default" src="Lospec.svg" alt="Lospec"><img class="btn-selected" src="Lospec Selected.svg" alt="" aria-hidden="true"></a>
 	</div>
 	<div class="widget">
-		<a class="project-thumb" href="https://sketchfab.com/DanielFiuk" target="_blank"><img src="Sketchfab Button.svg"></a>
+		<a class="project-thumb swap-button" href="https://sketchfab.com/DanielFiuk" target="_blank"><img class="btn-default" src="Sketchfab.svg" alt="Sketchfab"><img class="btn-selected" src="Sketchfab Selected.svg" alt="" aria-hidden="true"></a>
 	</div>
 </div>

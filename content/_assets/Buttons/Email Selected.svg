@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 128 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-128,-192)">
+        <g id="Bluesky" transform="matrix(1,0,0,1,0,256)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(17,23,23);"/>
+        </g>
+        <g id="Bluesky-Selected" affinity:id="Bluesky Selected">
+        </g>
+        <g id="X">
+        </g>
+        <g id="X1" affinity:id="X">
+        </g>
+        <g id="Discord">
+        </g>
+        <g id="Discord-Selected" affinity:id="Discord Selected">
+        </g>
+        <g id="GitHub" transform="matrix(1,0,0,1,256,128)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(17,23,23);"/>
+        </g>
+        <g id="GitHub-Selected" affinity:id="GitHub Selected" transform="matrix(1,0,0,1,256,192)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(36,41,47);"/>
+        </g>
+        <g id="Email" transform="matrix(1,0,0,1,128,128)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(17,23,23);"/>
+            <g id="Icon">
+            </g>
+        </g>
+        <g id="Email-Selected" affinity:id="Email Selected" transform="matrix(1,0,0,1,128,192)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:white;"/>
+            <g id="Icon1" affinity:id="Icon">
+                <path d="M36,43.345L36,17C36,16.827 36.015,16.657 36.043,16.492L51.127,29.9L36,43.345Z" style="fill:rgb(17,23,23);"/>
+                <path d="M92,43.345L76.873,29.9L85.304,22.406C86.881,23.621 88.857,24.344 91,24.344C91.338,24.344 91.671,24.326 92,24.291L92,43.345Z" style="fill:rgb(17,23,23);"/>
+                <path d="M36.342,48.393L54.137,32.575L62.671,40.161C63.429,40.835 64.571,40.835 65.329,40.161L73.863,32.575L91.658,48.393C91.157,49.349 90.154,50 89,50L39,50C37.846,50 36.843,49.349 36.342,48.393Z" style="fill:rgb(17,23,23);"/>
+                <path d="M39.26,14L81.709,14C81.674,14.329 81.656,14.662 81.656,15C81.656,16.568 82.043,18.046 82.727,19.345L64,35.991L39.26,14Z" style="fill:rgb(17,23,23);"/>
+                <path d="M94.87,11.318C95.783,12.276 96.344,13.573 96.344,15C96.344,17.172 95.044,19.043 93.181,19.879C92.515,20.178 91.777,20.344 91,20.344C89.347,20.344 87.869,19.591 86.888,18.411C86.119,17.485 85.656,16.296 85.656,15C85.656,14.223 85.822,13.485 86.121,12.819C86.957,10.956 88.828,9.656 91,9.656C92.522,9.656 93.897,10.295 94.87,11.318Z" style="fill:rgb(17,23,23);"/>
+            </g>
+        </g>
+        <g id="Itch">
+        </g>
+        <g id="Itch-Selected" affinity:id="Itch Selected" transform="matrix(1,0,0,1,0,192)">
+            <path d="M112,0C120.831,0 128,7.169 128,16L128,48C128,56.831 120.831,64 112,64L16,64C7.169,64 0,56.831 0,48L0,16C0,7.169 7.169,0 16,0L112,0Z" style="fill:rgb(255,90,93);"/>
+        </g>
+        <g id="LinkedIn">
+        </g>
+        <g id="LinkedIn-Selected" affinity:id="LinkedIn Selected">
+        </g>
+        <g id="Lospec">
+        </g>
+        <g id="Lospec-Selected" affinity:id="Lospec Selected">
+        </g>
+        <g id="Sketchfab">
+        </g>
+        <g id="Sketchfab-Selected" affinity:id="Sketchfab Selected">
+        </g>
+        <g id="YouTube">
+        </g>
+        <g id="YouTube-Selected" affinity:id="YouTube Selected">
+        </g>
+        <g id="My-Portfolio" affinity:id="My Portfolio">
+        </g>
+        <g id="My-Portfolio-Selected" affinity:id="My Portfolio Selected">
+        </g>
+    </g>
+</svg>

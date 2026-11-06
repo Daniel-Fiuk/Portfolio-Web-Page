@@ -79,7 +79,7 @@ The magic system enables players to alter core spells, crafting powerful combina
 Using Crocotile3D, I created the player and enemy character models and the tile set used in our level generator. I assembled a few simple assets to populate our levels randomly. I also produced various pixel art pieces to display around the walls of the level as they were generated. You can check them out in my Lospec Gallery or look up at the walls to see a few hanging there.
 
 <h2>Check Out My Lospec!</h2>
-<a align="center" href="https://lospec.com/daniel-fiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Lospec Button.svg"></a>
+<a class="swap-button" style="width: 7.5em" href="https://lospec.com/daniel-fiuk" target="_blank"><img class="btn-default" src="Lospec.svg" alt="Lospec"><img class="btn-selected" src="Lospec Selected.svg" alt="" aria-hidden="true"></a>
 
 # Made with Unreal Engine
 <p class="dark" align="center"><img src="Unreal Engine Logotype Horizontal White.svg"></p>

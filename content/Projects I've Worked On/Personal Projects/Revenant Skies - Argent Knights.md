@@ -83,7 +83,7 @@ Through my time working with blender, I've been able to compile some simple asse
 </div>
 
 <h2>Check Out My Sketchfab!</h2>
-<a align="center" href="https://sketchfab.com/Daniel.Fiuk" target="_blank"><img style="min-width: 7.5em; max-width: 7.5em" src="Sketchfab Button.svg"></a>
+<a class="swap-button" style="width: 7.5em" href="https://sketchfab.com/Daniel.Fiuk" target="_blank"><img class="btn-default" src="Sketchfab.svg" alt="Sketchfab"><img class="btn-selected" src="Sketchfab Selected.svg" alt="" aria-hidden="true"></a>
 
 # Made With Unity
 <p class="dark" align="center"><img src="Unity Logo White.svg"></p>

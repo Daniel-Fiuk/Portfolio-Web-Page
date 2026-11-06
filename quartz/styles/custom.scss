@@ -81,6 +81,42 @@ html[saved-theme="light"] .tool-status.inactive { background: rgba(185, 28, 28, 
 	min-width: 0;
 	max-width: 7.5em;
 }
+
+// ==========================================================================
+// Hover-swap icon buttons (contact / other-platforms rows, single page buttons)
+// Usage: <a class="swap-button" ...>
+//          <img class="btn-default"  src="Name.svg">
+//          <img class="btn-selected" src="Name Selected.svg">
+//        </a>
+// Both images are stacked in the same grid cell so there is no layout shift,
+// and the selected art is preloaded (opacity, not display:none) so the swap
+// never flickers on first hover.
+// ==========================================================================
+a.swap-button {
+	display: inline-grid;
+	max-width: 100%;
+}
+
+.button-row a.swap-button {
+	width: 100%;
+}
+
+a.swap-button img {
+	grid-area: 1 / 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: opacity 150ms ease, transform 180ms ease;
+}
+
+a.swap-button img.btn-selected { opacity: 0; }
+
+a.swap-button:hover img.btn-default,
+a.swap-button:focus-visible img.btn-default { opacity: 0; }
+
+a.swap-button:hover img.btn-selected,
+a.swap-button:focus-visible img.btn-selected { opacity: 1; }
+
 // ==========================================================================
 // Shared page layout (previously duplicated inline on every page: index.md,
 // Tools.md, Education.md, and every individual project page)

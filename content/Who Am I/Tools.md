@@ -194,20 +194,3 @@
 	</div>
 </div>
 
-<script>  
-	const spans = document.querySelectorAll('.year-diff');  
-	const currentYear = new Date().getFullYear();  
-		  
-	spans.forEach(span => {  
-		const startYear = parseInt(span.dataset.startYear);  
-		if (!isNaN(startYear)) {  
-			const difference = currentYear - startYear;  
-			if (difference === 1) { 
-				span.textContent = difference + ' year of experience'; 
-			} 
-			else { 
-				span.textContent = difference + ' years of experience'; 
-			}
-		}  
-	});  
-</script>
